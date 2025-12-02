@@ -1,0 +1,26 @@
+﻿body {
+    /* NAVBAR */
+    .custom-navbar
+
+{
+    background-color: #222 !important;
+}
+
+.nav-link {
+    color: #ccc !important;
+    font-weight: 500;
+}
+
+    .nav-link:hover {
+        color: white !important;
+    }
+
+/* FOOTER */
+.custom-footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+}
