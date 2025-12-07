@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Q70me5gNuOoIwbsyLIEUXXgjRcYJ+OoqlK+bfe1aqtM=",
+  "Hash": "NcBrzCPy1nCWPIxQQ9W2G9JYnYqielNv7u33FDblLLk=",
   "Source": "WepProjesi",
   "BasePath": "_content/WepProjesi",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\hero-girls.png",
+      "SourceId": "WepProjesi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\",
+      "BasePath": "_content/WepProjesi",
+      "RelativePath": "images/hero-girls.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\hero-girls.png"
     },
     {
       "Identity": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\js\\site.js",

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\hero-girls.png",
+      "PackagePath": "staticwebassets\\images\\hero-girls.png"
+    },
+    {
       "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
