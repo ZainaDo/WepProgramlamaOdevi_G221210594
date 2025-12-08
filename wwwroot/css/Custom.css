@@ -23,30 +23,34 @@
     text-align: center;
 }
 
-/* HERO SECTION */
-.hero-section {
-    position: relative;
+/* HERO BANNER (IMG) RESPONSIVE */
+.hero-wrapper {
     width: 100%;
-    height: 600px;
     overflow: hidden;
-}
-
-.hero-container {
-    position: relative;
-    width: auto;
-    height: auto;
-   
 }
 
 .hero-img {
     width: 100%;
     height: auto;
-    display: block; /*Boslari kaldirir*/
-    object-fit: cover;
-    object-fit: cover ; 
-    object-position: center;
-    filter: brightness(70%); /* Darken the image for better text visibility */
+    display: block;
 }
+
+
+.hizmet-card {
+    transition: transform .3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+    .hizmet-card:hover {
+        transform: scale(1.05);
+    }
+
+    .hizmet-card img {
+        height: 220px;
+        object-fit: cover;
+    }
+
 
 
 
