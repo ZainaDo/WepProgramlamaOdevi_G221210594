@@ -10,43 +10,16 @@
         <!-- Yoga -->
         <div class="col-md-4">
             <div class="card hizmet-card">
-                <img src="/images/yoga.jpg" class="card-img-top" alt="Yoga">
+                <img src="/images/yoga.png" class="card-img-top" alt="Yoga">
                 <div class="card-body">
                     <h5 class="card-title">Yoga</h5>
                     <p class="card-text">Esneklik, denge ve rahatlama odaklı yoga dersleri.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Cycling -->
-        <div class="col-md-4">
-            <div class="card hizmet-card">
-                <img src="/images/cycling.jpg" class="card-img-top" alt="Bisiklet Dersi">
-                <div class="card-body">
-                    <h5 class="card-title">Bisiklet Dersi</h5>
-                    <p class="card-text">Yüksek tempolu kardiyo ile yağ yakımı.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Strength -->
-        <div class="col-md-4">
-            <div class="card hizmet-card">
-                <img src="/images/strength.jpg" class="card-img-top" alt="Kuvvet Antrenmanı">
-                <div class="card-body">
-                    <h5 class="card-title">Kuvvet Antrenmanı</h5>
-                    <p class="card-text">Kas gelişimi ve güç artırmaya yönelik çalışmalar.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- HIIT -->
-        <div class="col-md-4">
-            <div class="card hizmet-card">
-                <img src="/images/hiit.jpg" class="card-img-top" alt="HIIT Antrenmanı">
-                <div class="card-body">
-                    <h5 class="card-title">HIIT Antrenmanı</h5>
-                    <p class="card-text">Kısa sürede maksimum yağ yakımı.</p>
+                    <button class="btn btn-primary" onclick="toggleDetails('yoga-details')">İncele</button>
+                    <div id="yoga-details" class="hizmet-details" style="display:none;">
+                        <p><strong>Süre:</strong> 1 saat</p>
+                        <p><strong>Fiyat:</strong> 120 TL</p>
+                        <p><strong>Saat:</strong> 10:00 AM - 11:00 AM</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,24 +27,103 @@
         <!-- Zumba -->
         <div class="col-md-4">
             <div class="card hizmet-card">
-                <img src="/images/zumba.jpg" class="card-img-top" alt="Zumba">
+                <img src="/images/zumba.png" class="card-img-top" alt="Zumba">
                 <div class="card-body">
                     <h5 class="card-title">Zumba</h5>
-                    <p class="card-text">Enerjik dans ile eğlenceli antrenman.</p>
+                    <p class="card-text">Zumba ile enerjik dans ve fitness.</p>
+                    <button class="btn btn-primary" onclick="toggleDetails('zumba-details')">İncele</button>
+                    <div id="zumba-details" class="hizmet-details" style="display:none;">
+                        <p><strong>Süre:</strong> 1 saat</p>
+                        <p><strong>Fiyat:</strong> 100 TL</p>
+                        <p><strong>Saat:</strong> 12:00 PM - 1:00 PM</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Les Mills -->
+        <!-- Grup Enerji Dersi -->
         <div class="col-md-4">
             <div class="card hizmet-card">
-                <img src="/images/lesmills.jpg" class="card-img-top" alt="Les Mills Programı">
+                <img src="/images/grup enerji dersi.png" class="card-img-top" alt="Grup Enerji Dersi">
                 <div class="card-body">
-                    <h5 class="card-title">Les Mills Programı</h5>
-                    <p class="card-text">Dünya çapında popüler grup ders programı.</p>
+                    <h5 class="card-title">Grup Enerji Dersi</h5>
+                    <p class="card-text">Grup çalışmaları ile güçlenme ve eğlenme.</p>
+                    <button class="btn btn-primary" onclick="toggleDetails('grup-enerji-details')">İncele</button>
+                    <div id="grup-enerji-details" class="hizmet-details" style="display:none;">
+                        <p><strong>Süre:</strong> 1.5 saat</p>
+                        <p><strong>Fiyat:</strong> 150 TL</p>
+                        <p><strong>Saat:</strong> 2:00 PM - 3:30 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bisiklet -->
+        <div class="col-md-4">
+            <div class="card hizmet-card">
+                <img src="/images/bisiklet.png" class="card-img-top" alt="Bisiklet">
+                <div class="card-body">
+                    <h5 class="card-title">Bisiklet Dersi</h5>
+                    <p class="card-text">Kardiyo ve dayanıklılığı arttıran bisiklet dersleri.</p>
+                    <button class="btn btn-primary" onclick="toggleDetails('bisiklet-details')">İncele</button>
+                    <div id="bisiklet-details" class="hizmet-details" style="display:none;">
+                        <p><strong>Süre:</strong> 1 saat</p>
+                        <p><strong>Fiyat:</strong> 110 TL</p>
+                        <p><strong>Saat:</strong> 4:00 PM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kuvvet Antrenmanı -->
+        <div class="col-md-4">
+            <div class="card hizmet-card">
+                <img src="/images/kuvvet antrenmani.png" class="card-img-top" alt="Kuvvet Antrenmanı">
+                <div class="card-body">
+                    <h5 class="card-title">Kuvvet Antrenmanı</h5>
+                    <p class="card-text">Kas gelişimi ve güç artışı için kuvvet antrenmanları.</p>
+                    <button class="btn btn-primary" onclick="toggleDetails('kuvvet-details')">İncele</button>
+                    <div id="kuvvet-details" class="hizmet-details" style="display:none;">
+                        <p><strong>Süre:</strong> 1 saat</p>
+                        <p><strong>Fiyat:</strong> 120 TL</p>
+                        <p><strong>Saat:</strong> 5:00 PM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Yüksek Şiddetli Antrenman -->
+        <div class="col-md-4">
+            <div class="card hizmet-card">
+                <img src="/images/yuksek siddetli aralikli antrenman.png" class="card-img-top" alt="Yüksek Şiddetli Antrenman">
+                <div class="card-body">
+                    <h5 class="card-title">Yüksek Şiddetli Antrenman</h5>
+                    <p class="card-text">Kısa sürede maksimum yağ yakımı sağlayan HIIT.</p>
+                    <button class="btn btn-primary" onclick="toggleDetails('yuksek-details')">İncele</button>
+                    <div id="yuksek-details" class="hizmet-details" style="display:none;">
+                        <p><strong>Süre:</strong> 45 dakika</p>
+                        <p><strong>Fiyat:</strong> 100 TL</p>
+                        <p><strong>Saat:</strong> 6:30 PM - 7:15 PM</p>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
+
+
+
+<script>
+    function toggleDetails(id) {
+        var details = document.getElementById(id);
+        if (details.style.display === "none") {
+            details.style.display = "block";
+        }
+
+        else {
+            details.style.display = "none";
+        }
+
+    }
+</script>

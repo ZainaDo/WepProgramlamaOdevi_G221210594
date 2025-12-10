@@ -13,8 +13,32 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\bisiklet.png",
+      "PackagePath": "staticwebassets\\images\\bisiklet.png"
+    },
+    {
+      "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\grup enerji dersi.png",
+      "PackagePath": "staticwebassets\\images\\grup enerji dersi.png"
+    },
+    {
       "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\hero-girls.png",
       "PackagePath": "staticwebassets\\images\\hero-girls.png"
+    },
+    {
+      "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\kuvvet antrenmani.png",
+      "PackagePath": "staticwebassets\\images\\kuvvet antrenmani.png"
+    },
+    {
+      "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\yoga.png",
+      "PackagePath": "staticwebassets\\images\\yoga.png"
+    },
+    {
+      "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\yuksek siddetli aralikli antrenman.png",
+      "PackagePath": "staticwebassets\\images\\yuksek siddetli aralikli antrenman.png"
+    },
+    {
+      "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\images\\zumba.png",
+      "PackagePath": "staticwebassets\\images\\zumba.png"
     },
     {
       "Id": "C:\\Users\\zaina\\source\\repos\\WepProjesi\\WepProjesi\\wwwroot\\js\\site.js",

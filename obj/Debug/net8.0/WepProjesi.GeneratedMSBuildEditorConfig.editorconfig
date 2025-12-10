@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\zaina\source\repos\WepProjesi\WepProjesi
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/zaina/source/repos/WepProjesi/WepProjesi/Views/Antrenor/AntrenorEkle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcQW50cmVub3JFa2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/zaina/source/repos/WepProjesi/WepProjesi/Views/Hizmet/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

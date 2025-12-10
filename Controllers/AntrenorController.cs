@@ -1,12 +1,30 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WepProjesi.Controllers
+public class AntrenorController : Controller
 {
-    public class AntrenorController : Controller
+    private readonly ITrainerService _trainerService;
+
+    public AntrenorController(ITrainerService trainerService)
     {
-        public IActionResult Index()
+        _trainerService = trainerService;
+    }
+
+    // GET: Antrenor/AntrenorEkle
+    public IActionResult AntrenorEkle()
+    {
+        return View();
+    }
+
+    // POST: Antrenor/AntrenorEkle
+    [HttpPost]
+    public IActionResult AntrenorEkle(TrainerModel model)
+    {
+        if (ModelState.IsValid)
         {
-            return View();
+            _trainerService.AddTrainer(model); // إضافة المدرب إلى قاعدة البيانات
+            return RedirectToAction("Index", "Antrenor"); // عرض المدربين
         }
+
+        return View(model);
     }
 }
