@@ -1,0 +1,19 @@
+﻿@model WepProjesi.Models.RandevuModeli
+
+<h2>Randevu Al</h2>
+
+<form method="post" action="/Randevu/RandevuAl">
+
+    <label>Antrenör Seç:</label>
+    <select name="SecilenAntrenorId" required>
+        @foreach (var ant in Model.Antrenorler)
+        {
+            <option value="@ant.Id">@ant.Ad - (@ant.Uzmanlik)</option>
+        }
+    </select>
+
+    <label>Randevu Zamanı:</label>
+    <input type="datetime-local" name="RandevuZamani" required />
+
+    <button type="submit">Randevu Al</button>
+</form>

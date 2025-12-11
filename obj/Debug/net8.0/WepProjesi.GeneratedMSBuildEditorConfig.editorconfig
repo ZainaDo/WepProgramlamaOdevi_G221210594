@@ -22,6 +22,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcQW50cmVub3JFa2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/zaina/source/repos/WepProjesi/WepProjesi/Views/Antrenor/AntrenorGörüntüle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcQW50cmVub3JHw7Zyw7xudMO8bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zaina/source/repos/WepProjesi/WepProjesi/Views/Antrenor/RandevuAl.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcUmFuZGV2dUFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/zaina/source/repos/WepProjesi/WepProjesi/Views/Hizmet/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGl6bWV0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -32,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/zaina/source/repos/WepProjesi/WepProjesi/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zaina/source/repos/WepProjesi/WepProjesi/Views/Randevu/RandevuOnay.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFuZGV2dVxSYW5kZXZ1T25heS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/zaina/source/repos/WepProjesi/WepProjesi/Views/Shared/Error.cshtml]

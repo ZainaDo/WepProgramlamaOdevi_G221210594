@@ -1,30 +1,30 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WepProjesi.Models;
+using System.Collections.Generic;
 
-public class AntrenorController : Controller
+namespace WepProjesi.Controllers
 {
-    private readonly ITrainerService _trainerService;
-
-    public AntrenorController(ITrainerService trainerService)
+    public class AntrenorController : Controller
     {
-        _trainerService = trainerService;
-    }
+        public static List<AntrenorModeli> AntrenorListesi = new List<AntrenorModeli>();
 
-    // GET: Antrenor/AntrenorEkle
-    public IActionResult AntrenorEkle()
-    {
-        return View();
-    }
-
-    // POST: Antrenor/AntrenorEkle
-    [HttpPost]
-    public IActionResult AntrenorEkle(TrainerModel model)
-    {
-        if (ModelState.IsValid)
+        public IActionResult AntrenorGörüntüle()
         {
-            _trainerService.AddTrainer(model); // إضافة المدرب إلى قاعدة البيانات
-            return RedirectToAction("Index", "Antrenor"); // عرض المدربين
+            return View(AntrenorListesi);
         }
 
-        return View(model);
+        public IActionResult AntrenorEkle()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AntrenorEkle(AntrenorModeli model)
+        {
+            model.Id = AntrenorListesi.Count + 1;
+            AntrenorListesi.Add(model);
+
+            return RedirectToAction("AntrenorGörüntüle");
+        }
     }
 }

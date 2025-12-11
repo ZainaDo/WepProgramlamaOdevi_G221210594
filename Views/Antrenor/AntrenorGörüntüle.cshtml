@@ -1,0 +1,26 @@
+﻿@model List<WepProjesi.Models.AntrenorModeli>
+
+<h2>Antrenör Listesi</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Uzmanlık</th>
+            <th>Hizmetler</th>
+            <th>Müsait Saatler</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Ad</td>
+                <td>@item.Uzmanlik</td>
+                <td>@item.Hizmetler</td>
+                <td>@item.MusaitSaatler</td>
+            </tr>
+        }
+    </tbody>
+</table>

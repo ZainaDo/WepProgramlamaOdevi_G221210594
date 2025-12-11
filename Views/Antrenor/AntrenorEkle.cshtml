@@ -1,31 +1,19 @@
-﻿@model TrainerModel
+﻿@model WepProjesi.Models.AntrenorModeli
 
-@{
-    ViewData["Title"] = "Antrenör Ekle";
-}
+<h2>Yeni Antrenör Ekle</h2>
 
-<h2>Antrenör Ekle</h2>
+<form method="post">
+    <label>Ad Soyad:</label>
+    <input type="text" name="Ad" required />
 
-<form method="post" action="/Antrenor/AntrenorEkle">
-    <div>
-        <label for="Name">Antrenör Adı:</label>
-        <input type="text" id="Name" name="Name" required />
-    </div>
+    <label>Uzmanlık:</label>
+    <input type="text" name="Uzmanlik" required />
 
-    <div>
-        <label for="Specialization">Uzmanlık Alanı:</label>
-        <input type="text" id="Specialization" name="Specialization" required />
-    </div>
+    <label>Hizmetler:</label>
+    <input type="text" name="Hizmetler" />
 
-    <div>
-        <label for="AvailableHours">Müsait Saatler:</label>
-        <input type="text" id="AvailableHours" name="AvailableHours" required />
-    </div>
+    <label>Müsait Saatler:</label>
+    <input type="text" name="MusaitSaatler" required />
 
-    <div>
-        <label for="Services">Yapabileceği Hizmetler:</label>
-        <input type="text" id="Services" name="Services" required />
-    </div>
-
-    <button type="submit">Antrenör Ekle</button>
+    <button type="submit">Kaydet</button>
 </form>
