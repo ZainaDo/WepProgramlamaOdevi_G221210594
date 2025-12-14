@@ -6,7 +6,13 @@ namespace WepProjesi.Controllers
 {
     public class AntrenorController : Controller
     {
-        public static List<AntrenorModeli> AntrenorListesi = new List<AntrenorModeli>();
+        public static List<AntrenorModeli> AntrenorListesi { get; set; } = new List<AntrenorModeli>();
+
+
+        public IActionResult Index()
+        {
+            return View();
+        }
 
         public IActionResult AntrenorGörüntüle()
         {

@@ -1,19 +1,37 @@
-﻿@model WepProjesi.Models.AntrenorModeli
+﻿@model WebProjesi.Models.AntrenorModeli
+@{
+    ViewData["Title"] = "Antrenör Ekle";
+}
 
-<h2>Yeni Antrenör Ekle</h2>
+<h2 class="text-center mb-4">Yeni Antrenör Ekle</h2>
 
-<form method="post">
-    <label>Ad Soyad:</label>
-    <input type="text" name="Ad" required />
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow p-4">
 
-    <label>Uzmanlık:</label>
-    <input type="text" name="Uzmanlik" required />
+            <form asp-action="AntrenorEkle" method="post">
 
-    <label>Hizmetler:</label>
-    <input type="text" name="Hizmetler" />
+                <div class="mb-3">
+                    <label class="form-label">Ad Soyad</label>
+                    <input asp-for="AdSoyad" class="form-control" />
+                </div>
 
-    <label>Müsait Saatler:</label>
-    <input type="text" name="MusaitSaatler" required />
+                <div class="mb-3">
+                    <label class="form-label">Hizmetler</label>
+                    <input asp-for="Hizmetler" class="form-control" />
+                </div>
 
-    <button type="submit">Kaydet</button>
-</form>
+                <div class="mb-3">
+                    <label class="form-label">Müsait Saatler</label>
+                    <input asp-for=" MusaitSaatler" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-success w-100">
+                    Kaydet
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</div>

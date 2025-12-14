@@ -1,0 +1,37 @@
+﻿@model WebProjesi.Models.RandevuModeli
+@{
+    ViewData["Title"] = "Randevu Al";
+}
+
+<h2 class="text-center mb-4">Randevu Al</h2>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow p-4">
+
+            <form asp-action="RandevuAl" method="post">
+
+                <div class="mb-3">
+                    <label class="form-label">Antrenör Seç</label>
+                    <select asp-for="SecilenAntrenorId" class="form-select">
+                        @foreach (var a in Model.Antrenorler)
+                        {
+                            <option value="@a.Id">@a.AdSoyad</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Randevu Tarihi</label>
+                    <input asp-for="RandevuZamani" type="datetime-local" class="form-control" />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                    Randevu Oluştur
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</div>
