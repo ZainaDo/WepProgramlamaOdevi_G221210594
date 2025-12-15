@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WepProjesi.Models
+namespace WebProjesi.Models
+
 {
     public class RandevuModeli
     {
         public int SecilenAntrenorId { get; set; }
-
         public DateTime RandevuZamani { get; set; }
 
-        public List<AntrenorModeli> Antrenorler { get; set; } = new();
+        public List<AntrenorModeli> Antrenorler { get; set; }
+            = new List<AntrenorModeli>();
     }
 }

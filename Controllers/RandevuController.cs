@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WepProjesi.Models;
+using WebProjesi.Models;
 
-namespace WepProjesi.Controllers
+namespace WebProjesi.Controllers
 {
     public class RandevuController : Controller
     {
         public IActionResult RandevuAl()
         {
-            var model = new RandevuModeli()
+            var model = new RandevuModeli
             {
                 Antrenorler = AntrenorController.AntrenorListesi
             };

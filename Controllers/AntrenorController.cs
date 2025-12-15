@@ -1,20 +1,20 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WepProjesi.Models;
+using WebProjesi.Models;
 using System.Collections.Generic;
 
-namespace WepProjesi.Controllers
+namespace WebProjesi.Controllers
 {
     public class AntrenorController : Controller
     {
-        public static List<AntrenorModeli> AntrenorListesi { get; set; } = new List<AntrenorModeli>();
-
+        public static List<AntrenorModeli> AntrenorListesi { get; set; }
+            = new List<AntrenorModeli>();
 
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult AntrenorGörüntüle()
+        public IActionResult AntrenorGoruntule()
         {
             return View(AntrenorListesi);
         }
@@ -29,8 +29,7 @@ namespace WepProjesi.Controllers
         {
             model.Id = AntrenorListesi.Count + 1;
             AntrenorListesi.Add(model);
-
-            return RedirectToAction("AntrenorGörüntüle");
+            return RedirectToAction("AntrenorGoruntule");
         }
     }
 }
