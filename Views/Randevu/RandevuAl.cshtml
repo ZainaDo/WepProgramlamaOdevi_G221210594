@@ -1,36 +1,46 @@
 ﻿@model WebProjesi.Models.RandevuModeli
+
 @{
     ViewData["Title"] = "Randevu Al";
 }
 
-<h2 class="text-center mb-4">Randevu Al</h2>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
 
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card shadow p-4">
-
-            <form asp-action="RandevuAl" method="post">
-
-                <div class="mb-3">
-                    <label class="form-label">Antrenör Seç</label>
-                    <select asp-for="SecilenAntrenorId" class="form-select">
-                        @foreach (var a in Model.Antrenorler)
-                        {
-                            <option value="@a.Id">@a.AdSoyad</option>
-                        }
-                    </select>
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Randevu Al</h4>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Randevu Tarihi</label>
-                    <input asp-for="RandevuZamani" type="datetime-local" class="form-control" />
+                <div class="card-body">
+                    <form asp-action="RandevuAl" method="post">
+
+                        <div class="mb-3">
+                            <label class="form-label">Antrenör Seç</label>
+                            <select asp-for="SecilenAntrenorId" class="form-select">
+                                @foreach (var a in Model.Antrenorler)
+                                {
+                                    <option value="@a.Id">@a.AdSoyad</option>
+                                }
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Tarih</label>
+                            <input asp-for="RandevuZamani" type="datetime-local" class="form-control" lang="en" />
+
+                        </div>
+
+                        <div class="d-grid">
+                            <button class="btn btn-primary">
+                                Randevu Oluştur
+                            </button>
+                        </div>
+
+                    </form>
                 </div>
-
-                <button type="submit" class="btn btn-primary w-100">
-                    Randevu Oluştur
-                </button>
-
-            </form>
+            </div>
 
         </div>
     </div>

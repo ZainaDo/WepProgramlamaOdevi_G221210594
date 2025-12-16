@@ -2,7 +2,12 @@
     ViewData["Title"] = "Randevu Onay";
 }
 
-<div class="alert alert-success text-center mt-5">
-    <h3>Randevunuz başarıyla oluşturuldu ✅</h3>
-    <p>Teşekkür ederiz.</p>
+<div class="container mt-5">
+    <div class="alert alert-success text-center shadow">
+        <h4>✅ Randevunuz Oluşturuldu</h4>
+        <p>Teşekkür ederiz.</p>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-outline-success mt-3">
+            Ana Sayfaya Dön
+        </a>
+    </div>
 </div>

@@ -1,36 +1,45 @@
 ﻿@model WebProjesi.Models.AntrenorModeli
+
 @{
     ViewData["Title"] = "Antrenör Ekle";
 }
 
-<h2 class="text-center mb-4">Yeni Antrenör Ekle</h2>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
 
-<div class="row justify-content-center">
-    <div class="col-md-6">
-        <div class="card shadow p-4">
-
-            <form asp-action="AntrenorEkle" method="post">
-
-                <div class="mb-3">
-                    <label class="form-label">Ad Soyad</label>
-                    <input asp-for="AdSoyad" class="form-control" />
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white text-center">
+                    <h4>Yeni Antrenör Ekle</h4>
                 </div>
 
-                <div class="mb-3">
-                    <label class="form-label">Hizmetler</label>
-                    <input asp-for="Hizmetler" class="form-control" />
+                <div class="card-body">
+                    <form asp-action="AntrenorEkle" method="post">
+
+                        <div class="mb-3">
+                            <label class="form-label">Ad Soyad</label>
+                            <input asp-for="AdSoyad" class="form-control" placeholder="Ad Soyad giriniz">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Hizmetler</label>
+                            <input asp-for="Hizmetler" class="form-control" placeholder="Fitness, Pilates...">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Müsait Saatler</label>
+                            <input asp-for="MusaitSaatler" class="form-control" placeholder="09:00 - 17:00">
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">
+                                Kaydet
+                            </button>
+                        </div>
+
+                    </form>
                 </div>
-
-                <div class="mb-3">
-                    <label class="form-label">Müsait Saatler</label>
-                    <input asp-for=" MusaitSaatler" class="form-control" />
-                </div>
-
-                <button type="submit" class="btn btn-success w-100">
-                    Kaydet
-                </button>
-
-            </form>
+            </div>
 
         </div>
     </div>
