@@ -1,46 +1,53 @@
 ﻿@model WebProjesi.Models.AntrenorModeli
-
 @{
-    ViewData["Title"] = "Antrenör Ekle";
+    ViewData["Title"] = "Yeni Antrenör Ekle";
 }
 
-<div class="container mt-5">
+<div class="container py-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-
-            <div class="card shadow">
+        <div class="col-lg-7 col-md-9">
+            <div class="card shadow-sm">
                 <div class="card-header bg-dark text-white text-center">
-                    <h4>Yeni Antrenör Ekle</h4>
+                    <h3 class="mb-0">Yeni Antrenör Ekle</h3>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body p-4">
                     <form asp-action="AntrenorEkle" method="post">
 
                         <div class="mb-3">
                             <label class="form-label">Ad Soyad</label>
-                            <input asp-for="AdSoyad" class="form-control" placeholder="Ad Soyad giriniz">
+                            <input asp-for="AdSoyad" class="form-control" placeholder="Ad Soyad giriniz" />
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Hizmetler</label>
-                            <input asp-for="Hizmetler" class="form-control" placeholder="Fitness, Pilates...">
+                            
+                            <select asp-for="Hizmetler" class="form-select">
+                                <option value="">Seçiniz...</option>
+                                <option>Fitness</option>
+                                <option>Pilates</option>
+                                <option>Yoga</option>
+                                <option>Zumba</option>
+                                <option>CrossFit</option>
+                                <option>Spinning</option>
+                            </select>
                         </div>
 
                         <div class="mb-3">
                             <label class="form-label">Müsait Saatler</label>
-                            <input asp-for="MusaitSaatler" class="form-control" placeholder="09:00 - 17:00">
+                            <select asp-for="MusaitSaatler" class="form-select">
+                                <option value="">Seçiniz...</option>
+                                <option>09:00 - 17:00</option>
+                                <option>10:00 - 18:00</option>
+                                <option>12:00 - 20:00</option>
+                                <option>14:00 - 22:00</option>
+                            </select>
                         </div>
 
-                        <div class="d-grid">
-                            <button type="submit" class="btn btn-success">
-                                Kaydet
-                            </button>
-                        </div>
-
+                        <button type="submit" class="btn btn-success w-100">Kaydet</button>
                     </form>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

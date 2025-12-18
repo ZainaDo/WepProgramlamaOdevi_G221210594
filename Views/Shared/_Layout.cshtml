@@ -23,23 +23,37 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                    <a class="nav-link text-white"
+                    asp-controller="Home" 
+                    asp-action="Index">Ana Sayfa</a>
                 </li>
-                    <li class="nav-item">
-                        <a class="nav-link" asp-controller="Hizmet" asp-action="Index">
-                            Hizmetler
-                        </a>
-                    </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-white" asp-controller="Antrenor" asp-action="AntrenorEkle">Antrenör Ekle</a>
+                        <a class="nav-link" 
+                        asp-controller="Hizmet" 
+                        asp-action="Index"> Hizmetler</a>
                 </li>
+
+              
                 <li class="nav-item">
-                    <a class="nav-link text-white" asp-controller="Antrenor" asp-action="AntrenorGörüntüle">Antrenörler</a>
+                    <a class="nav-link text-white"
+                    asp-controller="Antrenor"
+                    asp-action="AntrenorGoruntule">Antrenörler</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" asp-controller="Randevu" asp-action="RandevuAl">Randevu Al</a>
-                </li>
+
+                @if (User.IsInRole("Uye"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Randevu" asp-action="RandevuAl">Randevu Al</a>
+                        </li>
+                    }
+
+                @if (User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                        </li>
+                    }
 
             </ul>
         </div>

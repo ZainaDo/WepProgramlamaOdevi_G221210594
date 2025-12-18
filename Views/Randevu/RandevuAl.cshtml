@@ -1,24 +1,27 @@
-﻿@model WebProjesi.Models.RandevuModeli
-
+﻿@model RandevuModeli
 @{
     ViewData["Title"] = "Randevu Al";
 }
 
-<div class="container mt-5">
+<div class="container py-5">
     <div class="row justify-content-center">
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-8">
 
-            <div class="card shadow">
-                <div class="card-header bg-primary text-white text-center">
-                    <h4>Randevu Al</h4>
+            <div class="card shadow-lg border-0 rounded-4">
+                <div class="card-header text-center bg-primary text-white rounded-top-4">
+                    <h4 class="mb-0">Randevu Al</h4>
                 </div>
 
-                <div class="card-body">
+                <div class="card-body p-4">
                     <form asp-action="RandevuAl" method="post">
 
+                        <!-- Antrenör -->
                         <div class="mb-3">
-                            <label class="form-label">Antrenör Seç</label>
-                            <select asp-for="SecilenAntrenorId" class="form-select">
+                            <label class="form-label fw-semibold">Antrenör Seç</label>
+                            <select asp-for="SecilenAntrenorId"
+                                    class="form-select"
+                                    required>
+                                <option value="">Antrenör seçiniz</option>
                                 @foreach (var a in Model.Antrenorler)
                                 {
                                     <option value="@a.Id">@a.AdSoyad</option>
@@ -26,14 +29,17 @@
                             </select>
                         </div>
 
+                        <!-- Tarih -->
                         <div class="mb-3">
                             <label class="form-label">Tarih</label>
-                            <input asp-for="RandevuZamani" type="datetime-local" class="form-control" lang="en" />
-
+                            <input type="date"
+                                   name="Tarih"
+                                   class="form-control"
+                                   required />
                         </div>
 
                         <div class="d-grid">
-                            <button class="btn btn-primary">
+                            <button type="submit" class="btn btn-primary btn-lg">
                                 Randevu Oluştur
                             </button>
                         </div>
